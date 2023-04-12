@@ -1,12 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
 /**
  * _strdup - duplicate to new memory space location
  * @str: char
+ * Description: the programme to duplicate to a mem
  * Return: 0
  */
-char *_strdup(char *str)
+
+char _strdup(char *str)
 {
 	char *aaa;
 	int i, r = 0;
@@ -19,7 +22,7 @@ char *_strdup(char *str)
 	if (aaa == NULL)
 	return (NULL);
 
-for (r = 0; str[r]; r++)
+	for (r = 0; str[r]; r++)
 	aaa[r] = str[r];
 	return (aaa);
 }
